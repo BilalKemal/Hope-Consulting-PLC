@@ -9,12 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
         header {
             background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 1em 0;
+            padding: 2em 0;
         }
         nav {
             display: flex;
@@ -39,28 +40,56 @@
             padding: 10px 20px;
             margin: 5px;
             cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .language-switcher button:hover {
+            background-color: #45a049;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            background-color: white;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1em 0;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
         h2 {
             color: #4CAF50;
         }
+        h3 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
         .hidden {
             display: none;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
     <script>
@@ -89,38 +118,53 @@
         <section id="home">
             <div class="lang en">
                 <h2>Welcome to Hope Consulting PLC</h2>
-                <p>At Hope Consulting PLC, we empower individuals, families, and communities in Ethiopia through innovative social work solutions, fostering resilience, equality, and sustainable development.</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="Community Engagement">
+                </div>
+                <p>At Hope Consulting PLC, we empower individuals, families, and communities in Addis Ababa through innovative social work solutions, fostering resilience, equality, and sustainable development.</p>
             </div>
             <div class="lang am hidden">
-                <h2>እንኳን ወደ ሆፕ ኮንሰልቲንግ ፒ/ኤል/ሲ/ ደህና መጣችሁ</h2>
-                <p>በሆፕ ኮንሰልቲንግ ፒ/ኤል/ሲ/ በኢትዮጵያ ውስጥ ያሉ ግለሰቦችን፣ ቤተሰቦችን እና ማህበረሰቦችን ፈጠራን ያማከለ የማህበራዊ ስራ መፍትሄዎችን፣ ችግርን በመቋቋም ስኬትን መጎናፀፍን፣ እኩልነትን እና ዘላቂ ልማትን እናበረታታለን።</p>
+                <h2>እንኳን ወደ ሆፕ ኮንሰልቲንግ እንኩዋን ደህና መጣችሁ</h2>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="Community Engagement">
+                </div>
+                <p>በሆፕ ኮንሰልቲንግ ፒ.ኤል.ሲ. በአዲስ አበባ በኢኖቬቲቭ ማህበራዊ የስራ መፍትሄዎች ግል ሰዎችን፣ ቤተሰቦችን፣ እና ማህበረሰቦችን እንከታተላለን፣ ችግሮችን በጥንካሬ፣ በተመካከልነት፣ እና በተጠቃሚነት መሻር።</p>
             </div>
         </section>
         <section id="about">
             <div class="lang en">
                 <h2>About Us</h2>
-                <p>Hope Consulting PLC is dedicated to being a leading consultancy recognized for its transformative impact on social welfare. We advocate for inclusive practices and societal well-being in Ethiopia and beyond.</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="About Us">
+                </div>
+                <p>Hope Consulting PLC is dedicated to being a leading consultancy recognized for its transformative impact on social welfare. We advocate for inclusive practices and societal well-being in Addis Ababa and beyond.</p>
                 <h3>Mission</h3>
-                <p>To empower individuals, families, and communities in Ethiopia through innovative social work solutions, fostering resilience, equality, and sustainable development.</p>
+                <p>To empower individuals, families, and communities in Addis Ababa through innovative social work solutions, fostering resilience, equality, and sustainable development.</p>
                 <h3>Vision</h3>
-                <p>To be a leading consultancy recognized for its transformative impact on social welfare, advocating for inclusive practices and societal well-being in Ethiopia and beyond.</p>
+                <p>To be a leading consultancy recognized for its transformative impact on social welfare, advocating for inclusive practices and societal well-being in Addis Ababa and beyond.</p>
             </div>
             <div class="lang am hidden">
                 <h2>ስለ እኛ</h2>
-                <p>ሆፕ ኮንሰልቲንግ ኃ.የተ.የግ.ማ. በማህበራዊ ደህንነት ላይ ለሚኖረው ለውጥ አስተዋፅዖ እውቅና ያለው መሪ አማካሪ ለመሆን ቆርጧል። በኢትዮጵያ እና ከዚያም በላይ ያሉትን ሁሉን አቀፍ ተግባራት እና የማህበረሰብ ደህንነትን እናበረታታለን።</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="About Us">
+                </div>
+                <p>ሆፕ ኮንሰልቲንግ ፒ.ኤል.ሲ. ማህበራዊ ወንጀል ላይ የሚነጻጽር ተጠቃሚ ምርት የሆነ ኮንሰልቲንግ ድርጅት ለመሆን ተስፋ አድርጓል። በአዲስ አበባ እና ከዚያም በላይ በተካተተ ምርጫዎች እና ማህበራዊ ዕድገት እንሳተፋለን።</p>
                 <h3>ተልዕኮ</h3>
-                <p>በኢትዮጵያ ውስጥ ያሉ ግለሰቦችን፣ ቤተሰቦችን እና ማህበረሰቦችን የማህበራዊ ስራ መፍትሄዎች በማቅረብ ፈጠራን በማጎልበት፣ አቅምን በመፍጠር፣ እኩልነትን እና ዘላቂ ልማትን ማጎልበት።።</p>
+                <p>በአዲስ አበባ በኢኖቬቲቭ ማህበራዊ የስራ መፍትሄዎች ግል ሰዎችን፣ ቤተሰቦችን፣ እና ማህበረሰቦችን ለመሻር፣ በረጅም ጊዜ ችግሮችን እና በተመካከልነት፣ እና በተጠቃሚነት መሻር።</p>
                 <h3>ራእይ</h3>
-                <p>በማህበራዊ ደህንነት ላይ በሚያሳድረው ለውጥ፣ በኢትዮጵያ እና ከዚያም በላይ ለህብረተሰቡ ሁለንተናዊ ደህንነትን በመደገፍ ግንባር ቀደም አማካሪ ድርጅት ለመሆን።።</p>
+                <p>ሆፕ ኮንሰልቲንግ ፒ.ኤል.ሲ. ማህበራዊ ወንጀል ላይ የሚነጻጽር ተጠቃሚ ምርት ወንበዴ የሆነ ኮንሰልቲንግ ድርጅት ለመሆን ተስፋ አድርጓል። በአዲስ አበባ እና ከዚያም በላይ በተካተተ ምርጫዎች እና ማህበራዊ ዕድገት እንሳተፋለን።</p>
             </div>
         </section>
         <section id="services">
             <div class="lang en">
                 <h2>Our Services</h2>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="Our Services">
+                </div>
                 <h3>Community Engagement</h3>
                 <p>We actively involve community members in the development and implementation of programs to ensure relevance and effectiveness. We foster partnerships with local organizations, leaders, and residents to co-create solutions that address community needs and priorities.</p>
                 <h3>Capacity Building</h3>
-                <p>We offer training and skill development programs to enhance the capabilities of individuals and organizations working in the social welfare sector. Our workshops and seminars on self-development, leadership, and resilience empower individuals to reach their full potential.</p>
+                <p>We offer training and skill development programs to enhance the capabilities of individuals and organizations working in the social welfare sector. We provide workshops and seminars on self-development, leadership, and resilience to empower individuals to reach their full potential.</p>
                 <h3>Advocacy and Policy Influence</h3>
                 <p>We advocate for policies and practices that promote social justice, equality, and human rights at local, regional, and national levels. We engage in dialogue with policymakers, stakeholders, and the public to raise awareness of social issues and mobilize support for change.</p>
                 <h3>Collaborative Partnerships</h3>
@@ -138,6 +182,9 @@
             </div>
             <div class="lang am hidden">
                 <h2>አገልግሎቶቻችን</h2>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="Our Services">
+                </div>
                 <h3>ማህበረሰብ መተባበር</h3>
                 <p>በማህበረሰብ እንከታተላለን፣ አስፈላጊነትና ተጠቃሚነትን ለማስቀጠል ከማህበረሰብ አባላት ጋር እና ከአካባቢ ድርጅቶች፣ መሪዎች፣ እና እኩያት በጋራ መስማማትን እና መስበክን እናቃቅላለን።</p>
                 <h3>የጥናት እና አሻሻት</h3>
@@ -147,23 +194,29 @@
                 <h3>የጥናት እና አሻሻት</h3>
                 <p>በጥንቃቄ ጥናት እና እርምጃ እንዲቀጥል እናቃቅላለን። እናታውቃለን በግልፅነት እና ተጠቃሚነት እና በቀን እንዲያቀርቡን እና በተጠቃሚነት እንታውቃለን።</p>
                 <h3>የኢታኪካ ስራዎች</h3>
+                <p>በኢታኪካ አገልግሎት እና በማህበረሰብ ውጤቶችን እና በግልፅነት እና በቀን እንዲቀጥል እናታውቃለን። በግልፅነት እና በቀን እና በቀን እና በግልፅነት እና በግልፅነት እናታውቃለን።</p>
+                <h3>የኢታኪካ ስራዎች</h3>
                 <p>በኢታኪካ አገልግሎት እና በማህበረሰብ ውጤቶችን እና በግልፅነት እና በቀን እንዲቀጥል እናታውቃለን።</p>
             </div>
         </section>
         <section id="contact">
             <div class="lang en">
                 <h2>Contact Us</h2>
-                <p>For more information or to get involved, please contact us:</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="Contact Us">
+                </div>
+                <p>Feel free to reach out to us for any inquiries or collaboration opportunities. We're here to help!</p>
                 <p>Email: info@hopeconsultingplc.com</p>
                 <p>Phone: +251-123-456-789</p>
-                <p>Address: 123 Hope Street, Addis Ababa, Ethiopia</p>
             </div>
             <div class="lang am hidden">
                 <h2>አግኙን</h2>
-                <p>ለበለጠ መረጃ ወይም ለመሳተፍ እባክዎን ይናገሩን:</p>
-                <p>ኢሜል: info@hopeconsultingplc.com</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/800x400" alt="Contact Us">
+                </div>
+                <p>ለማንኛውም ጥያቄዎች ወይም ለመተባበር እንድንረዳን እናነን እናንተን ይሁን እንከታተላለን።</p>
+                <p>ኢሜይል: info@hopeconsultingplc.com</p>
                 <p>ስልክ: +251-123-456-789</p>
-                <p>አድራሻ: 123 Hope Street, Addis Ababa, Ethiopia</p>
             </div>
         </section>
     </div>
