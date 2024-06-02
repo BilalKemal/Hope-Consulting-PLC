@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Consulting PLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .language-switcher {
+            margin: 10px;
+            text-align: center;
+        }
+        .language-switcher button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function switchLanguage(language) {
+            document.querySelectorAll('.lang').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.' + language).forEach(el => el.classList.remove('hidden'));
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hope Consulting PLC</h1>
+        <p>"Empowering Communities, Inspiring Growth, and Creating Excellence”</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('am')">አማርኛ</button>
+    </div>
+    <div class="container">
+        <section id="home">
+            <div class="lang en">
+                <h2>Welcome to Hope Consulting PLC</h2>
+                <p>At Hope Consulting PLC, we empower individuals, families, and communities in Ethiopia through innovative social work solutions, fostering resilience, equality, and sustainable development.</p>
+            </div>
+            <div class="lang am hidden">
+                <h2>እንኳን ወደ ሆፕ ኮንሰልቲንግ ፒ/ኤል/ሲ/ ደህና መጣችሁ</h2>
+                <p>በሆፕ ኮንሰልቲንግ ፒ/ኤል/ሲ/ በኢትዮጵያ ውስጥ ያሉ ግለሰቦችን፣ ቤተሰቦችን እና ማህበረሰቦችን ፈጠራን ያማከለ የማህበራዊ ስራ መፍትሄዎችን፣ ችግርን በመቋቋም ስኬትን መጎናፀፍን፣ እኩልነትን እና ዘላቂ ልማትን እናበረታታለን።</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="lang en">
+                <h2>About Us</h2>
+                <p>Hope Consulting PLC is dedicated to being a leading consultancy recognized for its transformative impact on social welfare. We advocate for inclusive practices and societal well-being in Ethiopia and beyond.</p>
+                <h3>Mission</h3>
+                <p>To empower individuals, families, and communities in Ethiopia through innovative social work solutions, fostering resilience, equality, and sustainable development.</p>
+                <h3>Vision</h3>
+                <p>To be a leading consultancy recognized for its transformative impact on social welfare, advocating for inclusive practices and societal well-being in Ethiopia and beyond.</p>
+            </div>
+            <div class="lang am hidden">
+                <h2>ስለ እኛ</h2>
+                <p>ሆፕ ኮንሰልቲንግ ኃ.የተ.የግ.ማ. በማህበራዊ ደህንነት ላይ ለሚኖረው ለውጥ አስተዋፅዖ እውቅና ያለው መሪ አማካሪ ለመሆን ቆርጧል። በኢትዮጵያ እና ከዚያም በላይ ያሉትን ሁሉን አቀፍ ተግባራት እና የማህበረሰብ ደህንነትን እናበረታታለን።</p>
+                <h3>ተልዕኮ</h3>
+                <p>በኢትዮጵያ ውስጥ ያሉ ግለሰቦችን፣ ቤተሰቦችን እና ማህበረሰቦችን የማህበራዊ ስራ መፍትሄዎች በማቅረብ ፈጠራን በማጎልበት፣ አቅምን በመፍጠር፣ እኩልነትን እና ዘላቂ ልማትን ማጎልበት።።</p>
+                <h3>ራእይ</h3>
+                <p>በማህበራዊ ደህንነት ላይ በሚያሳድረው ለውጥ፣ በኢትዮጵያ እና ከዚያም በላይ ለህብረተሰቡ ሁለንተናዊ ደህንነትን በመደገፍ ግንባር ቀደም አማካሪ ድርጅት ለመሆን።።</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="lang en">
+                <h2>Our Services</h2>
+                <h3>Community Engagement</h3>
+                <p>We actively involve community members in the development and implementation of programs to ensure relevance and effectiveness. We foster partnerships with local organizations, leaders, and residents to co-create solutions that address community needs and priorities.</p>
+                <h3>Capacity Building</h3>
+                <p>We offer training and skill development programs to enhance the capabilities of individuals and organizations working in the social welfare sector. Our workshops and seminars on self-development, leadership, and resilience empower individuals to reach their full potential.</p>
+                <h3>Advocacy and Policy Influence</h3>
+                <p>We advocate for policies and practices that promote social justice, equality, and human rights at local, regional, and national levels. We engage in dialogue with policymakers, stakeholders, and the public to raise awareness of social issues and mobilize support for change.</p>
+                <h3>Collaborative Partnerships</h3>
+                <p>We forge partnerships with government agencies, NGOs, businesses, and other stakeholders to leverage resources and expertise for maximum impact. We collaborate with educational institutions and training providers to deliver digital literacy programs to individuals of all ages and backgrounds.</p>
+                <h3>Cultural Sensitivity</h3>
+                <p>We respect and value the diverse cultural contexts of the communities we serve, integrating cultural competence into all aspects of service delivery. We provide culturally sensitive services and support that honor the traditions, values, and beliefs of the people we serve.</p>
+                <h3>Research and Evaluation</h3>
+                <p>We conduct rigorous research and evaluation to inform evidence-based practices and continuously improve service delivery. We monitor and evaluate the impact of programs and interventions to ensure accountability and effectiveness.</p>
+                <h3>Ethical Practice</h3>
+                <p>We uphold the highest standards of professional ethics and integrity in all interactions with clients, partners, and stakeholders. We ensure confidentiality, privacy, and respect for the rights and dignity of all individuals served by the organization.</p>
+                <h3>Digital Literacy Training</h3>
+                <p>We develop curriculum and training modules to teach essential digital skills, including computer basics, internet navigation, and software applications. We offer specialized training on topics such as digital security, online communication, and information literacy to empower individuals to safely and effectively engage in the digital world.</p>
+                <h3>Leadership Development</h3>
+                <p>We provide training and mentorship programs to develop leadership skills among staff, volunteers, and community members. We cultivate a culture of leadership and innovation within the organization, empowering individuals to take initiative and drive positive change.</p>
+            </div>
+            <div class="lang am hidden">
+                <h2>አገልግሎቶቻችን</h2>
+                <h3>ማህበረሰብ መተባበር</h3>
+                <p>በማህበረሰብ እንከታተላለን፣ አስፈላጊነትና ተጠቃሚነትን ለማስቀጠል ከማህበረሰብ አባላት ጋር እና ከአካባቢ ድርጅቶች፣ መሪዎች፣ እና እኩያት በጋራ መስማማትን እና መስበክን እናቃቅላለን።</p>
+                <h3>የጥናት እና አሻሻት</h3>
+                <p>እንድንኖር በጥንቃቄ ጥናት እና እርምጃ እንደሚያቀርቡን እና እንዲቀጥል በቀን እንድንይ እናማክላለን። የአገልግሎት ውጤቶችን እና እነሆ በግልፅነት እና ተጠቃሚነት እናታውቃለን።</p>
+                <h3>ኢታኪካ አገልግሎቶች</h3>
+                <p>ማኅበረሰብን በገንዘብ እና በሚዲያ እንዲጠቀም እና እንዲጠቅም እናቀርባለን። ማህበረሰብን በግልፅነት እና በተጠቃሚነት እንሳተፋለን።</p>
+                <h3>የጥናት እና አሻሻት</h3>
+                <p>በጥንቃቄ ጥናት እና እርምጃ እንዲቀጥል እናቃቅላለን። እናታውቃለን በግልፅነት እና ተጠቃሚነት እና በቀን እንዲያቀርቡን እና በተጠቃሚነት እንታውቃለን።</p>
+                <h3>የኢታኪካ ስራዎች</h3>
+                <p>በኢታኪካ አገልግሎት እና በማህበረሰብ ውጤቶችን እና በግልፅነት እና በቀን እንዲቀጥል እናታውቃለን።</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="lang en">
+                <h2>Contact Us</h2>
+                <p>For more information or to get involved, please contact us:</p>
+                <p>Email: info@hopeconsultingplc.com</p>
+                <p>Phone: +251-123-456-789</p>
+                <p>Address: 123 Hope Street, Addis Ababa, Ethiopia</p>
+            </div>
+            <div class="lang am hidden">
+                <h2>አግኙን</h2>
+                <p>ለበለጠ መረጃ ወይም ለመሳተፍ እባክዎን ይናገሩን:</p>
+                <p>ኢሜል: info@hopeconsultingplc.com</p>
+                <p>ስልክ: +251-123-456-789</p>
+                <p>አድራሻ: 123 Hope Street, Addis Ababa, Ethiopia</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hope Consulting PLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
